@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(0, 100%, 74%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Charis SIL', serif;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Nanum Gothic Coding', monospace;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400, 500, 600, 700
+}
+main{
+    background-image: url('bg-intro-desktop.png');
+    height: 100vh;
+    display: flex;
+    padding: 2em;
+}
+.right-content .input-container{
+    display: -ms-flexbox;
+    display: flex;
+}
+.content .right-content .input-field{
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 2px solid hsl(0, 100%, 74%);
+    margin: 5px 15px;
+    padding: 6px;
+}
+input:required:invalid{
+    outline: none;
+    border: none;
+    background-image: url('icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+}
+input:required:valid{
+    outline: none;
+    border: none;
+    border: 1px solid hsl(154, 59%, 751%);
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    place-items: center;
+    font-size: 16px;
+    justify-content: space-between;
+    
+}
+.content .right-content form{
+    width: 100%;
+    background-color: rgb(250, 240, 240);
+    border-radius: 4px;
+}
+.content .left-content{
+    text-align: left;
+    width: 50%;
+}
+.content p{
+    color: white;
+}
+.content h1 {
+    color: white;
+}
+.content .right-content .btn{
+    background-color: hsl(154, 59%, 51%);
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white ;
+    margin: 5px 15px;
+    padding: 6px;
+    border: none;
+}
+.content .right-content .try{
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 8px;
+    text-align: center;
+}
+.content .right-content p{
+    color: black;
+    font-size: 12px;
+}
+content:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 600px) { .left-content .right-content {
+    width: 100%;
+    height: auto;
+}    
+}
