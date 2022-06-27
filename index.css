@@ -94,7 +94,8 @@ content:after{
     clear: both;
 }
 
-@media (max-width: 600px) { .left-content .right-content {
+@media screen and (max-width: 1440px) and (min-width: 375px) { 
+    .left-content .right-content {
     width: 100%;
     height: auto;
 }    
