@@ -13,11 +13,12 @@ body{
     font-family: 'Poppins', sans-serif;
     font-weight: 400, 500, 600, 700
 }
-main{
-    background-image: url('bg-intro-desktop.png');
+main > div{
+    background-image: url('images/bg-intro-desktop.png');
     height: 100vh;
     display: flex;
     padding: 2em;
+    float: left;
 }
 .right-content .input-container{
     display: -ms-flexbox;
@@ -35,7 +36,7 @@ main{
 input:required:invalid{
     outline: none;
     border: none;
-    background-image: url('icon-error.svg');
+    background-image: url('images/icon-error.svg');
     background-repeat: no-repeat;
     background-position: right;
     background-origin: content-box;
@@ -94,9 +95,13 @@ content:after{
     clear: both;
 }
 
-@media screen and (max-width: 1440px) and (min-width: 375px) { 
-    .left-content .right-content {
-    width: 100%;
-    height: auto;
+@media screen and (max-width: 375px) { 
+    .content{
+    flex-direction: column;
 }    
+}
+@media screen and (max-width: 144px) {
+    .content {
+        flex-direction: row;
+    }
 }
